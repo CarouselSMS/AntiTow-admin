@@ -1,0 +1,20 @@
+%h1 Groups
+
+%table.groups
+  %tr
+    %th.name          Name
+    %th.sponsor       Sponsor
+    %th.locations     Locations
+    %th.ops           Operations
+  - for g in collection
+    %tr
+      %td.name=           link_to h(g.name), resource_path(g)
+      %td.sponsor=        h(g.sponsor)
+      %td.locations=      h(g.locations.count)
+      %td.ops
+        = link_to "Edit",   edit_resource_path(g)
+        = link_to "Delete", resource_path(g), :confirm => "Are you sure?", :method => :delete
+
+.commands
+  = link_to "Add Group", new_resource_path
+

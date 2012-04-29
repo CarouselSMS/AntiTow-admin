@@ -1,0 +1,273 @@
+html {
+  height: 100%
+}
+
+body {
+  font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+  color: #222;
+}
+
+#page {
+  padding: 0;
+  width: 990px;
+  font-size: 1.6em;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#footer {
+  font-size: 0.66em;
+  overflow: hidden;
+  padding: 10px;
+  margin: 30px 0 10px;
+  color: #666;
+  clear: both;
+  text-shadow: #eee 0 1px 0;
+}
+
+
+#footer .links {
+  float: right;
+}
+
+#footer .links a {
+  padding: 0 10px;
+}
+
+#footer .links a.feedback {
+  padding-right: 0;
+}
+
+#header {
+  margin: 5px 0;
+  color: #444;
+  text-align: right;
+}
+
+#header a,#header a:visited {
+  color: #444;
+  text-shadow: #fff 0 1px 0;
+}
+
+#menu ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 5px 0;
+  border-bottom: 1px dotted #ccc;
+  font-size: 12px;
+}
+
+#menu li {
+  float: left;
+  margin-right: 20px;
+}
+
+/* ------------------ CONTENT ------------------ */
+
+#content {
+  margin: 0;
+  width: 950px;
+}
+
+#content #mainarea {
+  width: 950px;
+}
+
+#content {
+  font-size: 0.75em;
+  padding: 0.5em 0;
+  min-height: 300px;
+  height: auto !important;
+  height: 300px;
+}
+
+
+/* ---------------- HEADLINES ------------------------ */
+
+h1,h2,h3,h4 {
+  color: #666;
+  font-family: "Century Gothic";
+}
+
+h1 {
+  font-size: 1.7em;
+  margin: 1em 0 0.55em;
+}
+
+h2, .session .name, legend {
+  font-size: 1.2em;
+  margin: 3em 0 0.5em;
+  padding: 8px;
+  background: #fff url(../images/web/h2_bg.gif) top left no-repeat;
+  color: #000;
+  text-shadow: #eee 0px 1px 0;
+  clear: left;
+}
+
+form h2 {
+  margin: 1em 0;
+}
+textarea {
+  width: 624px;
+  height: 100px;
+  font-family: "Lucida Grande";
+  font-size: 14px;
+  padding: 3px;
+  border: 1px solid #ccc;
+}
+
+h3 {
+  margin: 1em 0;
+}
+
+h4 {
+  margin: 1em 0;
+  font-weight: bold;
+}
+
+table {
+  margin: 0 0 1em 0;
+  padding: 0em;
+}
+
+table th {
+  font-size: 1.2em;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+}
+
+table td,table th {
+  padding: 0.2em 0.5em;
+}
+
+.pagination {
+  margin: 0 0 0.5em 0;
+}
+
+.unrelated {
+  margin-top: 2em !important;
+}
+
+.error, .notice, .errorExplanation {
+  margin: 2em 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+.notice {
+  background-color: #fee;
+}
+
+p {
+  margin: 1em 0;
+  text-align: justify;
+}
+
+.local-commands {
+  margin: 1em 0;
+}
+
+.commands {
+  margin: 2em 0;
+  padding: 1em 0 0 0;
+  border-top: 1px solid #ccc;
+}
+
+.commands a {
+  padding-right: 1em;
+}
+
+.no-items {
+  margin: 2em 0;
+  color: #444;
+}
+
+table.properties tr {
+  vertical-align: top;
+}
+
+table.properties .label {
+  font-weight: bold;
+  text-align: right;
+}
+
+table.details td {
+  padding: 5px 0;
+}
+
+table td.label {
+  color: #999;
+  text-align: right;
+  padding-right: 10px;
+}
+
+label {
+  display: block;
+  color: #666;
+}
+
+div.properties {
+  overflow: hidden;
+  zoom: 1;
+  margin-bottom: 0.5em;
+}
+.property label {
+  float: left;
+  width: 80px;
+  margin-right: 12px;
+}
+
+.field input, .field select {
+  font-size: 14px;
+}
+
+.field input {
+  padding: 5px 3px;
+  border: 1px solid #ccc;
+}
+
+form .field {
+  margin-bottom: 15px;
+}
+
+label[for="conference_customized"], label[for="conference_visible"], label[for="remember_me"] {
+  float: left;
+  padding-right: 10px;
+}
+
+a {
+  color: #98040e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #666;
+}
+
+.operations a {
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 15px;
+}
+
+ul.locations {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.locations li {
+  float: left;
+  width: 190px;
+  margin: 0;
+  padding: 0;
+}

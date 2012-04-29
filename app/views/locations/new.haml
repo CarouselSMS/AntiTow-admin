@@ -1,0 +1,8 @@
+%h1 New Location
+
+- form_for @location do |f|
+  = render :partial => f
+  .commit= f.submit "Add Location"
+
+.commands
+  = link_to "Back to Locations", locations_url

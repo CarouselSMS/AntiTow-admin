@@ -1,0 +1,22 @@
+downtown:
+  name:           DOWNTOWN
+  keyword:        downtown
+  description:    Downtown, Columbus OH
+  vcalendar:      some vc data
+  feed_url:       http://feed.com/url
+  alert_offsets:  0,1,25
+  checked_at:     <%= 2.minutes.ago.to_s(:db) %>
+
+german:
+  name:           GERMAN
+  keyword:        german
+  description:    German, Columbus OH
+  vcalendar:      some vc data
+  feed_url:       http://feed.com/german
+  alert_offsets:  0
+  checked_at:     <%= 2.minutes.ago.to_s(:db) %>
+
+no_feed:
+  name:           NO FEED
+  keyword:        no feed
+  

@@ -1,0 +1,8 @@
+%h1 Update Group
+
+- form_for @group do |f|
+  = render :partial => f
+  .commit= f.submit "Update Group"
+
+.commands
+  = link_to "Back to Groups", collection_url

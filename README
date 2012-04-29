@@ -1,0 +1,5 @@
+Basic admin app for AntiTow.com street sweeping alerts.
+
+API keys and passwords redacted, but otherwise, everything is there.
+
+It's a Rails 2.3.2 app, created and operating since that was the latest and greatest. Continues to work with our SMS API (bit.ly/sms-api).

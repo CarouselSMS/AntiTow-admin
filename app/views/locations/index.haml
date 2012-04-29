@@ -1,0 +1,23 @@
+%h1 Locations
+
+%table.locations
+  %tr
+    %th.name          Name
+    %th.keyword       Keyword
+    %th.feed_url      Feed URL
+    %th.alert_offsets Alert Offsets (hours)
+    %th.ops           Operations
+  - for l in @locations
+    %tr
+      %td.name=           link_to h(l.name), location_path(l)
+      %td.keyword=        h(l.keyword)
+      %td.feed_url=       h(l.feed_url)
+      %td.alert_offsets=  h(l.alert_offsets)
+      %td.ops
+        = link_to "Edit", edit_location_path(l)
+        = link_to "Delete", location_path(l), :confirm => "Are you sure?", :method => :delete
+
+.commands
+  = link_to "Add Location", new_location_path
+
+    

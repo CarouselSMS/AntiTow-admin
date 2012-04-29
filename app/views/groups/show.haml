@@ -1,0 +1,23 @@
+%h1 Group: #{h(@group.name)}
+
+%table.properties
+  %tr
+    %td.label Name:
+    %td=      h(@group.name)
+  %tr
+    %td.label Sponsor message:
+    %td=      h(@group.sponsor)
+  %tr
+    %td.label Locations:
+    %td
+      - if @group.locations.empty?
+        No locations assigned
+      - else
+        %ul
+          - for l in @group.locations
+            %li= link_to h(l.name), l
+
+.commands
+  = link_to "Back to Groups", collection_path
+  = link_to "Edit",           edit_resource_path(@group)
+  = link_to "Delete",         @group, :confirm => "Are you sure?", :method => :delete

@@ -1,0 +1,18 @@
+= form.error_messages
+
+.field
+  = form.label      :name, "Group Name"
+  = form.text_field :name
+
+.field
+  = form.label      :sponsor, "Sponsor message"
+  = form.text_field :sponsor
+
+.field
+  = form.label      :locations
+  %ul.locations
+    - lids = form.object.location_ids
+    - for l in Location.all
+      %li
+        = check_box_tag "group[location_ids][]", l.id, lids.include?(l.id)
+        = h(l.name)

@@ -1,0 +1,29 @@
+%h1 Location: #{h(@location.name)}
+
+%table.properties
+  %tr
+    %td.label Name:
+    %td=      h(@location.name)
+  %tr
+    %td.label Keyword:
+    %td=      h(@location.keyword)
+  %tr
+    %td.label Description:
+    %td=      h(@location.description)
+  %tr
+    %td.label iCal feed URL:
+    %td=      h(@location.feed_url)
+  %tr
+    %td.label Alert Offsets (hours):
+    %td=      h(@location.alert_offsets)
+  %tr
+    %td.label Last checked at:
+    %td=      h(@location.checked_at.to_s(:details))
+  %tr
+    %td.label Last updated at:
+    %td=      @location.feed_updated_at && h(@location.feed_updated_at.to_s(:details))
+
+.commands
+  = link_to "Back to Locations", locations_path
+  = link_to "Edit", edit_location_path(@location)
+  = link_to "Delete", location_path(@location), :confirm => "Are you sure?", :method => :delete

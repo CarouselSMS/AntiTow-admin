@@ -1,0 +1,21 @@
+= form.error_messages
+
+.field
+  = form.label      :name, "Location Name"
+  = form.text_field :name
+
+.field
+  = form.label      :keyword, "Associated Subscription Keyword"
+  = form.text_field :keyword
+
+.field
+  = form.label      :feed_url, "iCal feed URL"
+  = form.text_field :feed_url
+
+.field
+  = form.label      :alert_offsets, "Alert offsets (comma-separated hours)"
+  = form.text_field :alert_offsets
+
+.field
+  = form.label      :description
+  = form.text_area  :description, :rows => 5
