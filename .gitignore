@@ -1,0 +1,17 @@
+log/*.log*
+log/*.db
+log/job*
+tmp/**/*
+.DS_Store
+doc/api
+doc/app
+archives
+
+*~
+
+# gems
+.bundle
+vendor/gems/gems
+vendor/gems/specifications
+vendor/gems/doc
+vendor/gems/environment.rb
